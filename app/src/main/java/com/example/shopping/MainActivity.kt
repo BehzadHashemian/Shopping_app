@@ -42,5 +42,8 @@ fun Root(){
     }
 }
 
-//@Preview(showBackground = true)
-//@Composable
+@Preview(showBackground = true)
+@Composable
+fun RootPrev(){
+    HomePage()
+}

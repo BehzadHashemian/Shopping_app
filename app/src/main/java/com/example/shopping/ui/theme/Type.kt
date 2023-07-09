@@ -2,33 +2,50 @@ package com.example.shopping.ui.theme
 
 import androidx.compose.material3.Typography
 import androidx.compose.ui.text.TextStyle
+import androidx.compose.ui.text.font.Font
 import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.sp
+import com.example.shopping.R
+
+
+private val lato = FontFamily(
+    Font(R.font.lato_bold , weight = FontWeight.Bold),
+    Font(R.font.lato_thin , weight = FontWeight.Thin),
+    Font(R.font.lato_thinitalic , weight = FontWeight.Medium),
+)
+
 
 // Set of Material typography styles to start with
 val Typography = Typography(
+    titleLarge = TextStyle(
+        fontFamily = lato,
+        fontWeight = FontWeight.Bold,
+        fontSize = 36.sp,
+        lineHeight = 28.sp,
+        letterSpacing = 0.2.sp
+    ),
     bodyLarge = TextStyle(
-        fontFamily = FontFamily.Default,
-        fontWeight = FontWeight.Normal,
+        fontFamily = lato,
+        fontWeight = FontWeight.Bold,
         fontSize = 16.sp,
         lineHeight = 24.sp,
-        letterSpacing = 0.5.sp
-    )
-    /* Other default text styles to override
-    titleLarge = TextStyle(
-        fontFamily = FontFamily.Default,
-        fontWeight = FontWeight.Normal,
-        fontSize = 22.sp,
-        lineHeight = 28.sp,
-        letterSpacing = 0.sp
+        letterSpacing = 0.2.sp
+    ),
+
+    bodyMedium = TextStyle(
+        fontFamily = lato,
+        fontWeight = FontWeight.Thin,
+        fontSize = 16.sp,
+        lineHeight = 16.sp,
+        letterSpacing = 0.3.sp
     ),
     labelSmall = TextStyle(
-        fontFamily = FontFamily.Default,
+        fontFamily = lato,
         fontWeight = FontWeight.Medium,
         fontSize = 11.sp,
         lineHeight = 16.sp,
         letterSpacing = 0.5.sp
     )
-    */
+
 )
