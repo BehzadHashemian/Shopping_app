@@ -23,7 +23,7 @@ val Typography = Typography(
         fontWeight = FontWeight.Bold,
         fontSize = 36.sp,
         lineHeight = 28.sp,
-        letterSpacing = 0.2.sp
+        letterSpacing = 1.sp
     ),
     bodyLarge = TextStyle(
         fontFamily = lato,
@@ -43,7 +43,7 @@ val Typography = Typography(
     labelSmall = TextStyle(
         fontFamily = lato,
         fontWeight = FontWeight.Medium,
-        fontSize = 11.sp,
+        fontSize = 12.sp,
         lineHeight = 16.sp,
         letterSpacing = 0.5.sp
     )
