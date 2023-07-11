@@ -18,6 +18,7 @@ import androidx.compose.material3.Icon
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.SearchBar
+import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
@@ -31,7 +32,7 @@ import androidx.compose.ui.graphics.graphicsLayer
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import com.example.shopping.ui.theme.ShoppingTheme
+import com.example.shopping.ui.theme.AppTheme
 
 @SuppressLint("UnusedMaterial3ScaffoldPaddingParameter")
 @OptIn(ExperimentalMaterial3Api::class)
@@ -39,23 +40,29 @@ import com.example.shopping.ui.theme.ShoppingTheme
 fun HomePage(){
 
 
-    ShoppingTheme() {
-        Scaffold() {
-        Column {
-            Column(
-                modifier = Modifier
-                    .fillMaxWidth()
-                    .padding(20.dp)
-                    .padding(top = 100.dp)
-            ) {
-                Text(text = "Hello", style = MaterialTheme.typography.titleLarge)
-                Text(text = "Welcome to Store", style = MaterialTheme.typography.bodyMedium)
+    AppTheme {
+        Surface(tonalElevation = 4.dp) {
+            Scaffold() {
+                Column {
+                    Column(
+                        modifier = Modifier
+                            .fillMaxWidth()
+                            .padding(20.dp)
+                            .padding(top = 100.dp)
+                    ) {
+                        Text(
+                            text = "Hello",
+                            style = MaterialTheme.typography.titleLarge,
+                            fontSize = 64.sp
+                        )
+                        Text(text = "Welcome to Store", style = MaterialTheme.typography.bodyMedium)
+                    }
+                    searchBox()
+                    Category_Row()
+
+                }
+
             }
-        searchBox()
-
-
-        }
-
         }
     }
 }
