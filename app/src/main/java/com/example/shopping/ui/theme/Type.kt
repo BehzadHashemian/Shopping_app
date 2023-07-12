@@ -21,14 +21,14 @@ val Typography = Typography(
     titleLarge = TextStyle(
         fontFamily = lato,
         fontWeight = FontWeight.Bold,
-        fontSize = 64.sp,
-        lineHeight = 64.sp,
-        letterSpacing = 1.sp
+        fontSize = 40.sp,
+        lineHeight = 40.sp,
+        letterSpacing = 0.1.sp
     ),
     bodyLarge = TextStyle(
         fontFamily = lato,
         fontWeight = FontWeight.Bold,
-        fontSize = 16.sp,
+        fontSize = 36.sp,
         lineHeight = 24.sp,
         letterSpacing = 0.2.sp
     ),
@@ -43,8 +43,8 @@ val Typography = Typography(
     labelSmall = TextStyle(
         fontFamily = lato,
         fontWeight = FontWeight.Medium,
-        fontSize = 12.sp,
-        lineHeight = 16.sp,
+        fontSize = 8.sp,
+        lineHeight = 8.sp,
         letterSpacing = 0.5.sp
     )
 
